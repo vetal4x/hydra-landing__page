@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    
+
     <title>Hydra Landing Page</title>
   </head>
   <body>
@@ -74,6 +80,42 @@
         </div>
       </div>
     </section>
+
+    <!-- Slider -->
+
+    <div class="slider">
+      <div class="slides">
+            
+        <div class="slide">
+          <img src="images/icons/navigation-icon.svg" alt="nav-icon" />
+          <div class="slide__text">
+            <span>Union St, Seattle, WA 98101, United States</span>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="images/icons/phone-icon.svg" alt="nav-icon" />
+          <div class="slide__text">
+            <span>(110) 1111-1010</span>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="images/icons/mail-icon.svg" alt="nav-icon" />
+          <div class="slide__text">
+            <span>Contact@HydraVTech.com</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider__button slider__button__prev" onclick="prevSlide()">
+        <img src="images/icons/contact-slider-arrow-left-icon.svg" alt="" />
+      </button>
+      <button class="slider__button slider__button__next" onclick="nextSlide()">
+        <img src="images/icons/contact-slider-arrow-right-icon.svg" alt="" />
+      </button>
+    </div>
+
     <script src="js/main.js"></script>
   </body>
 </html>
