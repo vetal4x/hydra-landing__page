@@ -219,15 +219,11 @@ img {
   position: relative;
   width: 100%;
   max-height: 100%;
-  overflow: hidden;
-  padding: 53px 22px;
 }
 
 .slides {
   position: relative;
   width: 100%;
-  height: 109px;
-  border-radius: 90px;
   overflow: hidden;
 }
 
@@ -238,19 +234,14 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: opacity 0.5s ease;
   opacity: 0;
   z-index: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 53px 52px 59px;
-  box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
-  background: radial-gradient(
-    2899.08% 50.16% at 50% 54%,
-    rgba(58, 52, 86, 0.95),
-    rgb(33, 30, 46) 100%
-  );
+}
+
+.displaySlide {
+  opacity: 1;
+  z-index: 1;
 }
 
 .slide.displaySlide {
@@ -274,24 +265,62 @@ img {
   z-index: 10;
 }
 
-.slider__button__prev {
+.slider__button__light {
+  padding: 1px 2px;
+  background: linear-gradient(
+    267.78deg,
+    rgb(192, 183, 232) -0.6%,
+    rgb(129, 118, 175) 98.314%
+  );
+  border-radius: 50%;
+  outline: 8px solid rgba(14, 14, 14, 0.32);
+}
+
+/* Slider Contact */
+
+.slider__contact {
+  padding: 53px 22px;
+}
+
+.slides__contact {
+  height: 109px;
+  border-radius: 90px;
+}
+
+.slide__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 53px 52px 59px;
+  box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+  background: radial-gradient(
+    2899.08% 50.16% at 50% 54%,
+    rgba(58, 52, 86, 0.95),
+    rgb(33, 30, 46) 100%
+  );
+}
+
+.slider__button__contact__prev {
   left: 7%;
 }
 
-.slider__button__next {
+.slider__button__contact__next {
   right: 7%;
 }
 
-.slider__button img {
+.slider__button__contact img {
   width: 26px;
   height: 26px;
 }
 
-.slider .slide .slide__text {
+.slide__contact__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
+
+/* Introduction */
 
 .introduction {
   display: flex;
@@ -327,12 +356,217 @@ img {
 
 .introduction__text {
   font-size: 12px;
-font-weight: 400;
-line-height: 20px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .introduction__button {
-margin: 34px 57px 50px;
+  margin: 34px 57px 50px;
+}
+
+/* Why Build */
+
+.why__build {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 35px 56px;
+}
+
+.why__build__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 26px;
+}
+
+/* Why Build Slider */
+
+.slider__why__build {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 27px;
+}
+
+.slides__why__build {
+  height: 511px;
+  border-radius: 40px;
+}
+
+.slide__why__build {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px 35px 36px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(67, 61, 96),
+    rgb(33, 30, 46) 100%
+  );
+}
+
+.slide__why__build img {
+  border: 12px solid rgba(14, 14, 14, 0.32);
+  border-radius: 50%;
+}
+
+.slider__button__why__build__prev {
+  left: -6%;
+}
+
+.slider__button__why__build__next {
+  right: -6%;
+}
+
+.slider__button__why__build img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider__why__build .slider__button {
+  padding: 1px 2px;
+  top: 48%;
+  background: linear-gradient(
+    267.78deg,
+    rgb(192, 183, 232) -0.6%,
+    rgb(129, 118, 175) 98.314%
+  );
+  border-radius: 50%;
+  outline: 8px solid rgba(14, 14, 14, 0.32);
+}
+
+.slider__why__build__title {
+  position: relative;
+  display: inline-block;
+  margin: 21px 0 38px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.slider__why__build__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -16px;
+  height: 1px;
+  background: rgba(192, 183, 232, 0.33);
+}
+
+.why__build__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.why__build__button {
+  width: 100%;
+  margin-top: 35px;
+}
+
+/* Banner Technologies */
+
+.banner__technologies {
+  width: 100%;
+  padding: 0 21px;
+}
+
+.banner__technologies__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: url(../images/banner-technologies.png) center center/cover
+    no-repeat;
+  padding: 50px 45px;
+  border-radius: 60px;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.banner__technologies__text__1 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-wrap: nowrap;
+}
+
+.banner__technologies__text__2 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+
+/* Slider Brands */
+
+.slider__brands {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 42px 66px;
+}
+
+.slides__brands {
+  height: 218px;
+}
+
+.slide__brands {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__button__brands__prev {
+  left: 4%;
+}
+
+.slider__button__brands__next {
+  right: 4%;
+}
+
+.slider__brands .slider__button {
+  top: 50%;
+}
+
+/* Animations */
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /* ___________________________________________________________________ */
@@ -383,26 +617,4 @@ margin: 34px 57px 50px;
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
-}
-
-/* Animations */
-
-@keyframes slideInRight {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
-}
-
-@keyframes slideInLeft {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
-}
-
-@keyframes slideOutRight {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
-}
-
-@keyframes slideOutLeft {
-  from { transform: translateX(0); }
-  to { transform: translateX(100%); }
 }
