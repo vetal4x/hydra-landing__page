@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -226,7 +228,9 @@
 
     <div class="banner__technologies">
       <div class="banner__technologies__text">
-        <span class="banner__technologies__text__1">TECHNOLOGIES & HARDWARE</span>
+        <span class="banner__technologies__text__1"
+          >TECHNOLOGIES & HARDWARE</span
+        >
         <span class="banner__technologies__text__2">USED BY HYDRA VR.</span>
       </div>
     </div>
@@ -235,7 +239,6 @@
 
     <div class="slider slider__brands">
       <div class="slides slides__brands">
-        
         <div class="slide slide__brands">
           <img src="images/brands/brand-vive.svg" alt="vive" />
         </div>
@@ -251,7 +254,6 @@
         <div class="slide slide__brands">
           <img src="images/brands/brand-unity.svg" alt="unity" />
         </div>
-       
       </div>
 
       <button
@@ -265,6 +267,117 @@
         <img src="images/icons/why-build-slider-arrow-right-icon.svg" alt="" />
       </button>
     </div>
+
+    <!-- How We Build -->
+
+    <div class="how__we__build">
+      <div class="how__we__build__title">
+        <span class="title">HOW WE BUILD</span>
+        <span class="subtitle">WITH HYDRA VR?</span>
+      </div>
+
+      <div class="slider slider__how__we__build">
+        <div class="slides slides__how__we__build">
+          <div class="slide slide__how__we__build">
+            <span class="step__number">01</span>
+            <span class="step__title">3D Conception & Design</span>
+          </div>
+
+          <div class="slide slide__how__we__build">
+            <span class="step__number">02</span>
+            <span class="step__title">Interaction Design</span>
+          </div>
+
+          <div class="slide slide__how__we__build">
+            <span class="step__number">03</span>
+            <span class="step__title">VR World User Testing</span>
+          </div>
+
+          <div class="slide slide__how__we__build">
+            <span class="step__number">04</span>
+            <span class="step__title">Hydra VR Deploy</span>
+          </div>
+        </div>
+
+        <button
+          class="slider__button__how__we__build__prev slider__button slider__button__prev slider__button__light"
+        >
+          <img src="images/icons/why-build-slider-arrow-left-icon.svg" alt="" />
+        </button>
+        <button
+          class="slider__button__how__we__build__next slider__button slider__button__next slider__button__light"
+        >
+          <img
+            src="images/icons/why-build-slider-arrow-right-icon.svg"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+
+    <!-- Join Hydra -->
+
+    <div class="join__hydra">
+      <form action="#" method="post" class="form__join">
+        <span class="form__title">JOIN HYDRA</span>
+        <span class="form__subtitle">Let’s Build<br />Your VR Experience</span>
+        <div class="fields">
+          <input
+            type="text"
+            name="first__name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="last__name"
+            placeholder="Last Name"
+            required
+          />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="tel"
+            name="phone__number"
+            placeholder="Phone Number"
+            pattern="\+?[0-9]{1,15}"
+            required
+          />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea
+            name="about"
+            placeholder="Tell Us Something..."
+            class="tell__us"
+          ></textarea>
+        </div>
+        <button class="button submit__button">SEND TO HYDRA</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer__logo__wrapper">
+        <div class="footer__logo__background"></div>
+        <div class="footer__logo">
+          <img src="/images/logo-footer.svg" alt="logo__footer" />
+        </div>
+      </div>
+      <span class="footer__social__title">SOCIALIZE WITH HYDRA</span>
+      <div class="footer__social__icons">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fab fa-pinterest fa-2x"></i></a>
+      </div>
+      <a href="#" class="button footer__button">BUILD YOUR WORLD</a>
+      <div class="footer__text">
+        <span class="footer__text__line">2025 © HYDRA LANDING PAGE</span>
+        <span class="footer__text__line">BY VETAL4X</span>
+        <span class="footer__text__line">NO RIGHTS RESERVED</span>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>

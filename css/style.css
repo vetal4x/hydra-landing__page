@@ -336,13 +336,13 @@ img {
   gap: 16px;
 }
 
-.title {
+.introduction__title .title {
   font-size: 26px;
   font-weight: 700;
   line-height: 32px;
 }
 
-.subtitle {
+.introduction__title .subtitle {
   font-size: 26px;
   font-weight: 300;
   line-height: 32px;
@@ -379,6 +379,18 @@ img {
   align-items: center;
   gap: 16px;
   padding-bottom: 26px;
+}
+
+.why__build__title .title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.why__build__title .subtitle {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 32px;
 }
 
 /* Why Build Slider */
@@ -507,7 +519,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 42px 66px;
+  padding: 42px 66px 32px;
 }
 
 .slides__brands {
@@ -529,6 +541,260 @@ img {
 
 .slider__brands .slider__button {
   top: 50%;
+}
+
+/* How We Build */
+
+.how__we__build {
+  width: 100%;
+  padding: 0 78px;
+}
+
+.how__we__build__title {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 16px;
+}
+
+.how__we__build__title .title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.how__we__build__title .subtitle {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.slider__how__we__build {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 37px;
+}
+
+.slides__how__we__build {
+  height: 284px;
+}
+
+.slide__how__we__build {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 37px;
+}
+
+.slide__how__we__build .step__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(160px, 10vw, 240px);
+  aspect-ratio: 1 / 1;
+  color: rgb(52, 48, 69);
+  font-size: clamp(64px, 5vw, 72px);
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(
+    251.38deg,
+    rgb(192, 183, 232) 12.874%,
+    rgb(129, 118, 175) 89.331%
+  );
+  border-radius: 50%;
+  outline: 18px solid rgba(14, 14, 14, 0.32);
+  padding: 40px;
+  margin-top: 18px;
+}
+
+.slide__how__we__build .step__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: center;
+}
+
+.slider__button__how__we__build__prev {
+  left: -25%;
+}
+
+.slider__button__how__we__build__next {
+  right: -25%;
+}
+
+.slider__how__we__build .slider__button {
+  top: 94%;
+}
+
+/* Join Hydra */
+
+.join__hydra {
+  padding: 80px 24px 10px;
+}
+
+.form__join {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 21px 65px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(64, 58, 95),
+    rgb(33, 30, 46) 100%
+  );
+}
+
+.form__join .fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.form__join .form__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.form__join .form__subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  text-align: center;
+  margin: 40px 0 36px;
+}
+
+.form__join .fields input,
+.form__join .fields .tell__us {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 40px;
+  padding: 18px 29px;
+}
+
+.form__join .fields .tell__us {
+  min-height: 218px;
+  color: rgb(255, 255, 255);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.form__join input::placeholder,
+textarea.tell__us::placeholder {
+  color: rgb(255, 255, 255, 0.75);
+}
+
+.form__join .fields input:focus,
+.form__join .fields textarea:focus {
+  border-color: rgb(192, 183, 232);
+  outline: none;
+}
+
+.form__join .submit__button {
+  padding: 15px 84px;
+  width: 100%;
+  margin-top: 52px;
+  color: rgb(52, 48, 69);
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 49px 89px;
+}
+
+.footer__logo__wrapper {
+  position: relative;
+  width: 100vw;
+  height: 268px;
+  overflow: hidden;
+}
+
+.footer__logo__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-image: url("/images/footer-logo-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.footer__logo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.footer .footer__social__title {
+  margin: 56px 0 29px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.footer .footer__social__icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 49px;
+}
+
+.footer .footer__social__icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(192, 183, 232);
+  text-decoration: none;
+}
+
+.footer .footer__social__icons a i {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+.footer .footer__button {
+  margin: 47px 0 99px;
+  width: 100%;
+}
+
+.footer .footer__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer .footer__text__line {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 2px;
 }
 
 /* Animations */

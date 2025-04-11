@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeSlider('.slider__contact');
   initializeSlider('.slider__why__build');
   initializeSlider('.slider__brands');
+  initializeSlider('.how__we__build');
 });
 
 
