@@ -58,20 +58,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     function nextSlide() {
-      if (window.innerWidth > 768 && sliderSelector !== '.slider__contact') return;
+      if (
+        (sliderSelector !== '.slider__contact' && window.innerWidth > 768) ||
+        (sliderSelector === '.slider__contact' && window.innerWidth > 1024)
+      ) return;
+    
       const currentSlide = slider.querySelector('.displaySlide');
       const slideIndex = slides.indexOf(currentSlide);
       let nextIndex = (slideIndex + 1) % slides.length;
       showSlide(nextIndex);
     }
-  
+    
     function prevSlide() {
-      if (window.innerWidth > 768 && sliderSelector !== '.slider__contact') return;
+      if (
+        (sliderSelector !== '.slider__contact' && window.innerWidth > 768) ||
+        (sliderSelector === '.slider__contact' && window.innerWidth > 1024)
+      ) return;
+    
       const currentSlide = slider.querySelector('.displaySlide');
       const slideIndex = slides.indexOf(currentSlide);
       let prevIndex = (slideIndex - 1 + slides.length) % slides.length;
       showSlide(prevIndex);
     }
+    
   
     const prevButton = slider.querySelector('.slider__button__prev');
     const nextButton = slider.querySelector('.slider__button__next');
