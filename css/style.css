@@ -371,14 +371,11 @@ img {
 }
 
 .introduction .about .about__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 36px 0 38px;
   width: 100%;
-}
-
-.introduction .about .about__image img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .introduction__text {
@@ -411,12 +408,6 @@ img {
   font-size: 12px;
 font-weight: 400;
 line-height: 23px;
-}
-
-.about__image img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 /* Why Build */
@@ -1114,6 +1105,10 @@ textarea.tell__us::placeholder {
     white-space: nowrap;
   }
 
+  .introduction .introduction__section .introduction__title .subtitle .subtitle__image {
+    display: block;
+  }
+  
   .subtitle .subtitle__image {
     width: 100%;
     min-width: 130px;
@@ -1124,6 +1119,7 @@ textarea.tell__us::placeholder {
   }
 
   .introduction .introduction__text {
+    display: block;
     font-size: 12px;
     font-weight: 300;
     line-height: 16px;
@@ -1133,24 +1129,23 @@ textarea.tell__us::placeholder {
 
   .about {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 16px;
     background: url(../images/about-background.png) no-repeat;
     background-size: contain;
   }
 
-  .about .about__image {
+  .introduction .about .about__image {
     flex: 1;
-    max-width: 50%;
-  }
-
-  .introduction .about__image {
     padding: 0;
+    justify-content: flex-start;
   }
 
   .about .about__text {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     flex: 1;
     max-width: 50%;
   }
@@ -1214,7 +1209,12 @@ textarea.tell__us::placeholder {
     white-space: nowrap;
   }
 
+  .why__build .why__build__pre__section .why__build__title .subtitle .subtitle__image {
+    display: block;
+  }
+
   .why__build .why__build__pre__section .why__build__text {
+    display: block;
     font-size: 12px;
     font-weight: 300;
     line-height: 16px;
@@ -1283,7 +1283,8 @@ textarea.tell__us::placeholder {
     line-height: 29px;
   }
 
-  .banner__technologies .button__down {
+  .banner__technologies .banner__technologies__text .button__down {
+    display: block;
     position: absolute;
     bottom: -22px;
     left: 50%;
@@ -1317,6 +1318,16 @@ textarea.tell__us::placeholder {
     flex: 1 1 45%;
     margin: -40px 0;
   }
+
+  .slide__brands .unreal__pc {
+    display: block;
+  }
+
+  .slide__brands .unreal__mobile {
+    display: none;
+  }
+  
+  
 
   .slider__button__brands__prev,
   .slider__button__brands__next {
@@ -1366,10 +1377,12 @@ textarea.tell__us::placeholder {
     .how__we__build__title
     .subtitle
     .subtitle__image {
+      display: block;
     min-width: 84px;
   }
 
   .how__we__build .how__we__build__pre__section .how__we__build__text {
+    display: block;
     font-size: 12px;
     font-weight: 300;
     line-height: 16px;
@@ -1391,6 +1404,7 @@ textarea.tell__us::placeholder {
     inset: 0;
     background: url("../images/how-we-build-background.png") no-repeat center
       top;
+      top: 12%;
     background-size: contain;
     z-index: -1;
     pointer-events: none;
@@ -1490,8 +1504,8 @@ textarea.tell__us::placeholder {
   .footer .footer__main {
     padding: 54px;
     display: flex;
-    justify-content: space-between;
-    gap: 26px;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100vw;
     margin-left: calc(-1 * (100vw - 100%) / 2);
@@ -1529,7 +1543,7 @@ textarea.tell__us::placeholder {
   .footer__logo {
     position: static;
     padding: 0;
-    height: 90%;
+    height: 100%;
   }
 
   .footer__logo__background {
@@ -1540,15 +1554,6 @@ textarea.tell__us::placeholder {
     height: auto;
     width: auto;
     position: static;
-  }
-
-  .footer .footer__main .footer__links .footer__links__list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
   }
 
   .footer .footer__main .footer__social {
@@ -1570,6 +1575,10 @@ textarea.tell__us::placeholder {
   .footer .footer__button {
     margin: 0;
     width: 214px;
+  }
+
+  .footer .footer__main .footer__social .footer__button {
+    margin: 47px 0 0;
   }
 
   .footer .footer__credits {
@@ -1773,6 +1782,20 @@ textarea.tell__us::placeholder {
 
   .footer .footer__main {
     padding: 76px 64px;
+    justify-content: space-between;
+  }
+
+  .footer .footer__main .footer__links {
+    display: block;
+  }
+
+  .footer .footer__main .footer__links .footer__links__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
   }
 
   .footer .footer__credits {
@@ -1896,12 +1919,11 @@ textarea.tell__us::placeholder {
     background-position-x: 49%;
   }
 
-  .about .about__image img {
+  .introduction .about .about__image img {
     width: 84%;
   }
 
   .about .about__text {
-    padding-top: 50px;
     gap: 25px;
   }
 
@@ -2040,6 +2062,10 @@ textarea.tell__us::placeholder {
     padding: 0 78px;
   }
 
+  .slider__how__we__build::before {
+      top: 0%;
+  }
+
   .slide__how__we__build {
     gap: 52px;
   }
@@ -2053,6 +2079,10 @@ textarea.tell__us::placeholder {
 
   .slide__how__we__build .step__title .step__title__text {
     line-height: 32px;
+  }
+
+  .slide__how__we__build .step__title .step__title__image {
+    display: inline-block;
   }
 
   .join__hydra {
@@ -2103,6 +2133,7 @@ textarea.tell__us::placeholder {
 
   .footer .footer__main {
     padding: 127px 84px;
+    align-items: flex-start;
   }
 
   .footer .footer__main::after {
@@ -2123,12 +2154,29 @@ textarea.tell__us::placeholder {
     gap: 23px;
   }
 
+  .footer .footer__main .footer__links__2 {
+    transform: translateX(38px);
+  }
+
+  .footer .footer__main .footer__social {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    padding-right: 18px;
+    gap: 4px;
+  }
+
   .footer .footer__main .footer__social .footer__social__title{
     font-weight: 700;
   }
 
-  .footer .footer__social__icons {
+  .footer .footer__main .footer__social__icons {
     gap: 20px;
+    margin-top: 35px;
+  }
+
+  .footer .footer__main .footer__social .footer__button {
+    width: 214px;
   }
 
   .footer .footer__credits {
