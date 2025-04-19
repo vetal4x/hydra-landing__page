@@ -340,9 +340,6 @@ img {
 /* Introduction */
 
 .introduction {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 0 19px;
 }
 
@@ -365,10 +362,23 @@ img {
   line-height: 32px;
 }
 
-.introduction .about__image {
+.introduction .introduction__section .introduction__title .subtitle .subtitle__image {
+  display: none;
+}
+
+.introduction__text {
+  display: none;
+}
+
+.introduction .about .about__image {
+  padding: 36px 0 38px;
   width: 100%;
-  height: 100%;
-  padding: 36px 0 51px;
+}
+
+.introduction .about .about__image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .introduction__text {
@@ -378,7 +388,35 @@ img {
 }
 
 .introduction__button {
-  margin: 34px 57px 50px;
+  margin: 34px 0 50px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .about__text .about__title {
+  display: none;
+}
+
+.about .about__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .about__text .text {
+  font-size: 12px;
+font-weight: 400;
+line-height: 23px;
+}
+
+.about__image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Why Build */
@@ -410,13 +448,20 @@ img {
   line-height: 32px;
 }
 
+.why__build .why__build__pre__section .why__build__title .subtitle .subtitle__image {
+  display: none;
+}
+
+.why__build .why__build__pre__section .why__build__text {
+  display: none;
+}
+
 /* Why Build Slider */
 
 .slider__why__build {
   display: block;
   width: 100%;
   height: 100%;
-  padding-top: 27px;
 }
 
 .slides__why__build {
@@ -537,13 +582,17 @@ img {
   text-align: center;
 }
 
+.banner__technologies .banner__technologies__text .button__down {
+  display: none;
+}
+
 /* Slider Brands */
 
 .slider__brands {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 42px 66px 32px;
+  padding: 32px 0;
 }
 
 .slides__brands {
@@ -553,6 +602,10 @@ img {
 .slide__brands {
   display: flex;
   justify-content: center;
+}
+
+.slide__brands .unreal__pc {
+  display: none;
 }
 
 .slider__button__brands__prev {
@@ -595,6 +648,14 @@ img {
   text-align: center;
 }
 
+.how__we__build .how__we__build__pre__section .how__we__build__title .subtitle .subtitle__image {
+  display: none;
+}
+
+.how__we__build .how__we__build__pre__section .how__we__build__text {
+  display: none;
+}
+
 .slider__how__we__build {
   display: block;
   width: 100%;
@@ -603,7 +664,7 @@ img {
 }
 
 .slides__how__we__build {
-  height: 284px;
+  height: 300px;
 }
 
 .slide__how__we__build {
@@ -642,12 +703,16 @@ img {
   text-align: center;
 }
 
+.slide__how__we__build .step__title .step__title__image {
+  display: none;
+}
+
 .slider__button__how__we__build__prev {
-  left: -21%;
+  left: -24%;
 }
 
 .slider__button__how__we__build__next {
-  right: -21%;
+  right: -24%;
 }
 
 .slider__how__we__build .slider__button {
@@ -743,7 +808,7 @@ textarea.tell__us::placeholder {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 49px 89px;
+  padding: 6px 49px 89px;
 }
 
 .footer__logo__wrapper {
@@ -774,21 +839,32 @@ textarea.tell__us::placeholder {
   padding: 60px 0;
 }
 
-.footer .footer__social__title {
-  margin: 56px 0 29px;
+.footer .footer__main .footer__links {
+  display: none;
+}
+
+.footer .footer__main .footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 49px;
+}
+
+.footer .footer__main .footer__social .footer__social__title {
+  margin: 29px 0 36px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
 }
 
-.footer .footer__social__icons {
+.footer .footer__main .footer__social .footer__social__icons {
   display: flex;
   justify-content: inherit;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.footer .footer__social__icons a {
+.footer .footer__main .footer__social .footer__social__icons a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -799,12 +875,12 @@ textarea.tell__us::placeholder {
   text-decoration: none;
 }
 
-.footer .footer__social__icons a i {
+.footer .footer__main .footer__social .footer__social__icons a i {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.78);
 }
 
-.footer .footer__button {
+.footer .footer__main .footer__social .footer__button {
   margin: 47px 0 99px;
   width: 100%;
 }
