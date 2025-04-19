@@ -469,7 +469,7 @@ img {
 .slider__why__build__title {
   position: relative;
   display: inline-block;
-  margin: 21px 0 38px;
+  margin: 24px 0 39px;
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
@@ -495,6 +495,11 @@ img {
 .why__build__button {
   width: 100%;
   margin-top: 35px;
+}
+
+.why__build__text {
+  line-height: 19px;
+  margin: 0 -15px;
 }
 
 /* Banner Technologies */
@@ -1298,12 +1303,21 @@ textarea.tell__us::placeholder {
   }
 
   .slider__how__we__build {
-    margin-left: -54px;
-    margin-right: -54px;
-    width: calc(100% + 108px);
-    padding: 0;
-    background: url(../images/how-we-build-background.png) no-repeat;
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-1 * (100vw - 100%) / 2);
+    z-index: 0;
+  }
+
+  .slider__how__we__build::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/how-we-build-background.png") no-repeat center
+      top;
     background-size: contain;
+    z-index: -1;
+    pointer-events: none;
   }
 
   .slides__how__we__build {
@@ -1627,6 +1641,24 @@ textarea.tell__us::placeholder {
     padding: 0;
   }
 
+  .slides__why__build {
+    flex-wrap: nowrap;
+  }
+
+  .slide__why__build {
+    flex: 1 1 0;
+        min-width: 0;
+  }
+
+  .why__build__button {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .slider__why__build__title {
+    white-space: nowrap;
+  }
+
   .banner__technologies {
     padding: 68px 64px;
   }
@@ -1650,6 +1682,11 @@ textarea.tell__us::placeholder {
     gap: 68px;
   }
 
+  .slide__how__we__build .step__title .step__title__image {
+    margin-right: 16px;
+    height: 22px;
+  }
+
   .join__hydra {
     padding: 0 64px;
   }
@@ -1668,7 +1705,367 @@ textarea.tell__us::placeholder {
 }
 
 @media (min-width: 1281px) {
+  .main {
+    padding: 50px 84px 0;
+  }
+
+  .main .menu .navbar ul {
+    margin-left: 65px;
+  }
+
+  .main .menu .header__buttons .join__button {
+    display: block;
+  }
+
+  .button {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .hero {
+    padding: 98px 0 88px;
+    gap: 150px;
+  }
+
+  .hero .hero__text {
+    flex: 1;
+    gap: 0;
+    padding-bottom: 20px;
+  }
+
+  .hero .hero__text .first__line {
+    margin: 0 0 4px;
+  }
+
+  .hero .hero__text .hero__text__gradient {
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .hero .hero__text .hero__text__white {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 1px;
+  }
+
+  .hero .hero__text .text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 36px 0 66px;
+  }
+
+  .slider__contact {
+    padding: 0 84px;
+  }
+
+  .slide__contact {
+    padding: 51px 0;
+  }
+
+  .slide__contact .slide__contact__text .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+
+  .slide__contact .slide__contact__text .text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+
+  .introduction {
+    padding: 90px 84px 107px;
+    gap: 98px;
+  }
+
+  .introduction .introduction__section {
+    gap: 24px;
+  }
+
+  .introduction .introduction__title {
+    gap: 13px;
+    max-width: 47%;
+  }
+
+  .introduction__title .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  .introduction__title .subtitle {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 44px;
+  }
+
+  .introduction .introduction__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 53%;
+  }
+
+  .subtitle .subtitle__image {
+    padding: 0;
+  }
+
+  .about {
+    background-size: 115%;
+    background-position-y: 17%;
+    background-position-x: 49%;
+  }
+
+  .about .about__image img {
+    width: 84%;
+  }
+
+  .about .about__text {
+    padding-top: 50px;
+    gap: 25px;
+  }
+
+  .about .about__text .about__title .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  .about .about__text .about__title .subtitle {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 44px;
+  }
+
+  .about .about__text .text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .introduction__button {
+    margin-top: -14px;
+  }
+
+  .why__build {
+    padding: 0 84px;
+    gap: 102px;
+  }
+
+  .why__build .why__build__pre__section {
+    padding-left: 6px;
+    gap: 21px;
+  }
+
+  .why__build .why__build__pre__section .why__build__title {
+    gap: 15px;
+    max-width: 47%;
+  }
+
+  .why__build .why__build__pre__section .why__build__title .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  .why__build .why__build__pre__section .why__build__title .subtitle {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 44px;
+    gap: 18px;
+  }
+
+  .why__build .why__build__pre__section .why__build__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 53%;
+  }
+
+  .banner__technologies {
+    padding: 114px 84px 85px;
+  }
+
+  .banner__technologies .banner__technologies__text {
+    padding: 108px 96px 96px;
+    gap: 11px;
+    border-radius: 160px;
+  }
+
+  .banner__technologies__text .banner__technologies__text__1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  .banner__technologies__text .banner__technologies__text__2 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 44px;
+  }
+
+  .banner__technologies .button__down {
+    width: 60px;
+    height: 60px;
+    bottom: -30px;
+    padding: 25px 17px 22px;
+  }
+
+  .slide__brands {
+    padding: 0 84px;
+  }
+
+  .slide__brands {
+    padding: 0;
+  }
+
+  .how__we__build {
+    padding: 109px 86px;
+    gap: 114px;
+  }
+
+  .how__we__build .how__we__build__pre__section {
+    gap: 22px;
+  }
+
+  .how__we__build .how__we__build__pre__section .how__we__build__title {
+    gap: 15px;
+    max-width: 47%;
+  }
+
+  .how__we__build .how__we__build__pre__section .how__we__build__title .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  .how__we__build
+    .how__we__build__pre__section
+    .how__we__build__title
+    .subtitle {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 44px;
+    gap: 18px;
+  }
+
+  .how__we__build .how__we__build__pre__section .how__we__build__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 53%;
+  }
+
+  .slider__how__we__build {
+    padding: 0 78px;
+  }
+
+  .slide__how__we__build {
+    gap: 52px;
+  }
+
+  .slide__how__we__build .step__number {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    width: auto;
+  }
+
+  .slide__how__we__build .step__title .step__title__text {
+    line-height: 32px;
+  }
+
+  .join__hydra {
+    padding: 0 84px;
+  }
+
+  .join__hydra .form__join {
+    padding: 90px 108px 84px;
+    border-radius: 100px;
+  }
+
+  .form__join .form__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  .join__hydra .form__join .form__title::after {
+    bottom: -30px;
+  }
+
+  .form__join .form__subtitle {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 44px;
+    margin: 52px 0 64px;
+  }
+
+  .form__join .fields {
+    row-gap: 35px;
+  }
+
+  .form__join .fields input {
+    padding: 26px 42px;
+  }
+
+  .form__join .fields .tell__us {
+    min-height: 210px;
+  }
+
+  .form__join .submit__button {
+    margin-top: 48px;
+  }
+
+  .footer {
+    padding: 0 64px 22px;
+  }
+
+  .footer .footer__main {
+    padding: 127px 84px;
+  }
+
+  .footer .footer__main::after {
+    bottom: 50px;
+  }
+
+  .footer .footer__main::before {
+    background-size: contain;
+    background-position: center -44px;
+  }
+
+  .footer__logo {
+    height: 100%;
+  }
+
+  .footer .footer__main .footer__links .footer__links__list {
+    font-weight: 700;
+    gap: 23px;
+  }
+
+  .footer .footer__main .footer__social .footer__social__title{
+    font-weight: 700;
+  }
+
+  .footer .footer__social__icons {
+    gap: 20px;
+  }
+
+  .footer .footer__credits {
+    padding: 0;
+  }
+
+  .footer .footer__credits__line {
+    font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+  }
 }
+
 @media (min-width: 1441px) {
 }
 @media (min-width: 1601px) {
