@@ -182,7 +182,7 @@ img {
   padding: 48px 0 0;
 }
 
-.hero .hero__img img {
+.hero .hero__image img {
   width: 100%;
   height: auto;
   display: block;
@@ -362,7 +362,11 @@ img {
   line-height: 32px;
 }
 
-.introduction .introduction__section .introduction__title .subtitle .subtitle__image {
+.introduction
+  .introduction__section
+  .introduction__title
+  .subtitle
+  .subtitle__image {
   display: none;
 }
 
@@ -406,8 +410,8 @@ img {
 
 .about .about__text .text {
   font-size: 12px;
-font-weight: 400;
-line-height: 23px;
+  font-weight: 400;
+  line-height: 23px;
 }
 
 /* Why Build */
@@ -439,7 +443,11 @@ line-height: 23px;
   line-height: 32px;
 }
 
-.why__build .why__build__pre__section .why__build__title .subtitle .subtitle__image {
+.why__build
+  .why__build__pre__section
+  .why__build__title
+  .subtitle
+  .subtitle__image {
   display: none;
 }
 
@@ -639,7 +647,11 @@ line-height: 23px;
   text-align: center;
 }
 
-.how__we__build .how__we__build__pre__section .how__we__build__title .subtitle .subtitle__image {
+.how__we__build
+  .how__we__build__pre__section
+  .how__we__build__title
+  .subtitle
+  .subtitle__image {
   display: none;
 }
 
@@ -790,6 +802,10 @@ textarea.tell__us::placeholder {
   width: 100%;
   margin-top: 52px;
   color: rgb(52, 48, 69);
+}
+
+textarea {
+  resize: none;
 }
 
 /* Footer */
@@ -1105,10 +1121,14 @@ textarea.tell__us::placeholder {
     white-space: nowrap;
   }
 
-  .introduction .introduction__section .introduction__title .subtitle .subtitle__image {
+  .introduction
+    .introduction__section
+    .introduction__title
+    .subtitle
+    .subtitle__image {
     display: block;
   }
-  
+
   .subtitle .subtitle__image {
     width: 100%;
     min-width: 130px;
@@ -1209,7 +1229,11 @@ textarea.tell__us::placeholder {
     white-space: nowrap;
   }
 
-  .why__build .why__build__pre__section .why__build__title .subtitle .subtitle__image {
+  .why__build
+    .why__build__pre__section
+    .why__build__title
+    .subtitle
+    .subtitle__image {
     display: block;
   }
 
@@ -1326,8 +1350,6 @@ textarea.tell__us::placeholder {
   .slide__brands .unreal__mobile {
     display: none;
   }
-  
-  
 
   .slider__button__brands__prev,
   .slider__button__brands__next {
@@ -1377,7 +1399,7 @@ textarea.tell__us::placeholder {
     .how__we__build__title
     .subtitle
     .subtitle__image {
-      display: block;
+    display: block;
     min-width: 84px;
   }
 
@@ -1404,7 +1426,7 @@ textarea.tell__us::placeholder {
     inset: 0;
     background: url("../images/how-we-build-background.png") no-repeat center
       top;
-      top: 12%;
+    top: 12%;
     background-size: contain;
     z-index: -1;
     pointer-events: none;
@@ -1732,7 +1754,7 @@ textarea.tell__us::placeholder {
 
   .slide__why__build {
     flex: 1 1 0;
-        min-width: 0;
+    min-width: 0;
   }
 
   .why__build__button {
@@ -2063,7 +2085,7 @@ textarea.tell__us::placeholder {
   }
 
   .slider__how__we__build::before {
-      top: 0%;
+    top: 0%;
   }
 
   .slide__how__we__build {
@@ -2166,7 +2188,7 @@ textarea.tell__us::placeholder {
     gap: 4px;
   }
 
-  .footer .footer__main .footer__social .footer__social__title{
+  .footer .footer__main .footer__social .footer__social__title {
     font-weight: 700;
   }
 
@@ -2185,15 +2207,206 @@ textarea.tell__us::placeholder {
 
   .footer .footer__credits__line {
     font-size: 14px;
-font-weight: 700;
-line-height: 17px;
+    font-weight: 700;
+    line-height: 17px;
   }
 }
 
 @media (min-width: 1441px) {
+
+  .button {
+    font-size: 15px;
+    width: 206px;
+    padding: 22px 50px;
+  }
+
+  .main {
+    padding: 50px 112px 0;
+  }
+
+  .main .menu .navbar ul {
+    gap: 55px;
+    margin-left: 10px;
+  }
+
+  .main .menu .navbar .nav__buttons {
+    font-size: 16px;
+  }
+
+  .main .menu .header__buttons {
+    gap: 50px;
+  }
+
+  .hero .hero__text .hero__text__gradient {
+    font-size: 61px;
+    line-height: 68px;
+  }
+
+  .hero .hero__text .hero__text__white {
+    font-size: 53px;
+  }
+
+  .hero .hero__text .text {
+    font-size: 19px;
+    line-height: 32px;
+  }
+
+  .hero .hero__image {
+    width: 34%;
+  }
+
+  .slider__contact {
+    padding: 0 112px;
+  }
+
+  .introduction {
+    padding: 90px 112px 107px;
+  }
+
+  .introduction__title .title,
+  .introduction__title .subtitle {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .introduction .introduction__text {
+    font-size: 19px;
+    line-height: 32px;
+  }
+
+  .introduction .about .about__image img {
+    width: 76%;
+  }
+
+  .about .about__text .about__title .title, 
+  .about .about__text .about__title .title {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .about .about__text .text {
+    font-size: 19px;
+    line-height: 32px;
+  }
+
+  .why__build {
+    padding: 0 112px;
+  }
+
+  .why__build .why__build__pre__section .why__build__title .title,
+  .why__build .why__build__pre__section .why__build__title .subtitle {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .why__build .why__build__pre__section .why__build__text {
+    font-size: 19px;
+    line-height: 32px;
+  }
+
+  .slider__why__build__title {
+    font-size: 31px;
+  }
+
+  .why__build__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .banner__technologies {
+    padding: 114px 112px 85px;
+  }
+
+  .banner__technologies__text .banner__technologies__text__1,
+  .banner__technologies__text .banner__technologies__text__2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .banner__technologies .banner__technologies__text .button__down {
+    width: 64px;
+    height: 64px;
+    bottom: -30px;
+  }
+
+  .how__we__build {
+    padding: 109px 112px;
+  }
+
+  .how__we__build .how__we__build__pre__section .how__we__build__title .title,
+  .how__we__build .how__we__build__pre__section .how__we__build__title .subtitle {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .how__we__build .how__we__build__pre__section .how__we__build__text {
+    font-size: 19px;
+    line-height: 32px;
+  }
+
+  .slider__how__we__build::before {
+    top: -10%;
+  }
+
+  .slide__how__we__build .step__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .join__hydra {
+    padding: 0 112px;
+  }
+
+  .join__hydra .form__join .form__title,
+  .form__join .form__subtitle {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .form__join .fields input, .form__join .fields .tell__us {
+    font-size: 19px;
+    line-height: 32px;
+  }
+
+  .form__join .fields input {
+    width: calc(50% - 12px); 
+  }
+
+  .form__join .submit__button {
+    padding: 20px 112px;
+  }
+
+  .footer {
+    padding: 0 64px 42px;
+  }
+
+  .footer .footer__main {
+    padding: 170px 112px;
+  }
+
+  .footer .footer__main .footer__links .footer__links__list {
+    font-size: 19px;
+  }
+
+  .footer .footer__main .footer__social .footer__social__title {
+    font-size: 19px;
+  }
+
+  .footer .footer__main .footer__social .footer__social__icons a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer .footer__main .footer__social .footer__social__icons a i {
+    font-size: 25px;
+  }
+
+  .footer .footer__credits__line {
+    font-size: 19px;
+    line-height: 32px;
+  }
 }
-@media (min-width: 1601px) {
-}
+
 
 /* Fonts */
 
